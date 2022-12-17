@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  height: 100px;
+  background-color: black;
+}
+
+.mainHeader {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100px;
+  z-index: 99;
+  padding: 5px;
+  background-color: black;
+}
+
+.logo {
+  float: left;
+  background-color: #747474;
+  border-radius: 10px;
+  color: aliceblue;
+  width: 200px;
+  height: 50px;
+  margin-left: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  float: left;
+  position: relative;
+}
+
+nav ul li a {
+  color: #e2e2e2;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+nav ul li:hover a {
+  background-color: white;
+  color: black;
+}
+
+.section {
+  clear: both;
+  border: 2px solid rgb(221, 221, 221);
+  padding: 20px 0;
+  background-color: rgb(236, 236, 236);
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+ /* to add margin after #section Id cliked */
+
+.sec::before {
+  content: "";
+  height: 100px;
+  display: block;
+}
+
+.container {
+  padding: 5px;
+  min-height: 100px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.container img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.container h2 {
+  text-transform: uppercase;
+}
+
+.col {
+  float: left;
+  position: relative;
+  padding: 5px;
+}
+
+.col-3 {
+  width: 33.3%;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.col-4 {
+  width: 25%;
+}
+
+.box {
+  background-color: rgb(231, 231, 231);
+  padding-bottom: 10px;
+  height: 300px;
+  margin: 10px 0 10px 10px;
+  border-radius: 10px;
+  box-shadow: 4px 9px 15px -1px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 4px 9px 15px -1px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 4px 9px 15px -1px rgba(0, 0, 0, 0.15);
+}
+
+.box p {
+  padding: 0 15px;
+  font-size: 20px;
+  font-weight: 300;
+  max-height: 200px;
+  overflow-y: auto;
+  margin: 15px 0;
+}
+
+.box p::first-letter {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(192, 192, 192);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.box h3 {
+  background-color: gray;
+  border-radius: 10px 10px 0 0;
+  padding-top: 16px;
+  color: white;
+  height: 60px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.card {
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: white;
+}
+
+.hero {
+  color: white;
+  font-size: 1.5em;
+  background: linear-gradient(90deg, rgb(0, 0, 8) 0%, rgb(54, 54, 54) 100%);
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3em;
+}
+
+.hero h2 {
+  font-size: 2em;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+}
+
+.slider {
+}
+
+.img-slider {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.btn {
+  width: 30px;
+  height: 80px;
+  margin: 5px;
+}
+
+.btn-l {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+}
+
+.btn-r {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -50%);
+}
+
+form {
+  width: 70%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  padding: 25px 50px;
+  font-size: 1.3em;
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+
+}
+
+label , input {
+  margin-top: 10px;
+}
+
+input , select {
+  height: 40px;
+  border: none;
+  padding-left: 10px;
+}
+
+textarea {
+  border: none;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-top: 6px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  font-size: 20px;
+  color: white;
+  padding: 14px 20px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+@media all and (max-width: 760px) {
+  .mainHeader {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .col-4 {
+    width: 100%;
+  }
+
+  .card {
+    text-align: center;
+    margin: 15px 35px;
+  }
+
+  .container img {
+    border-radius: 10px;
+  }
+
+  .logo {
+    float: none;
+    margin: 10px auto 20px;
+    display: block;
+  }
+
+  nav ul {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  nav ul li {
+    float: none;
+    display: inline-block;
+  }
+
+  nav ul li a {
+    padding: 0 15px;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .col-3 {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  .col-2 {
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+  }
+}
