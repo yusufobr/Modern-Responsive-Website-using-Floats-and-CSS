@@ -78,7 +78,7 @@ nav ul li:hover a {
   text-align: center;
 }
 
- /* to add margin after #section Id cliked */
+/* to add margin after #section Id cliked */
 
 .sec::before {
   content: "";
@@ -203,8 +203,7 @@ a:hover {
   color: gray;
 }
 
-.slider {
-}
+.slider {}
 
 .img-slider {
   width: 100%;
@@ -241,14 +240,15 @@ form {
   font-size: 1.3em;
   background-color: rgba(0, 0, 0, 0.04);
   border-radius: 8px;
-
 }
 
-label , input {
+label,
+input {
   margin-top: 10px;
 }
 
-input , select {
+input,
+select {
   height: 40px;
   border: none;
   padding-left: 10px;
@@ -261,8 +261,8 @@ textarea {
   margin-top: 6px;
 }
 
-input[type=submit] {
-  background-color: #4CAF50;
+input[type="submit"] {
+  background-color: #4caf50;
   font-size: 20px;
   color: white;
   padding: 14px 20px;
@@ -271,7 +271,6 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
-
 
 @media all and (max-width: 760px) {
   .mainHeader {
@@ -325,6 +324,7 @@ input[type=submit] {
     text-align: center;
     margin: auto;
   }
+
   .col-2 {
     width: 100%;
   }
